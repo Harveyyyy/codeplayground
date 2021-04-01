@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <div class="nav">
+            <ul>
+                <li><a class="nav-home" href="index.html">Home</a></li>
+                <li><a onclick="scrollDown()">About Us</a></li>
+                <li><a onclick="scrollDownContact()">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="content">
+
+        <p id="text-logo">CODE PLAYGROUND</p>
+        <p id="text-main">Where coding <br> is <span id="text-main-fun">fun</span></p>
+
+        <div class="content-buttons">
+            <button onclick="scrollDown()" id="content-button-learn-more">Learn More</button>
+            <button id="content-button-start">Start</button>
+        </div>
+
+        <img src="illustration.png" alt="illustraton" id="content-illustration">
+
+    </section>
+    <section class="about-us">
+
+        <p id="about-us-breadcrumb">About Us</p>
+        <p id="about-us-text">Code Playground is a non-profit organization that helps aspiring programmers improve their coding skills by playing fun and exciting games. </p>
+        <p id="about-us-quote"><span id="about-us-code-to-learn""><s>Learn to Code</s><br>Code to Learn!</span></p>
+
+    </section>
+
+    <section class="contact-us">
+
+        <p id="contact-us-text">Have any questions?</p>
+        <p id="contact-us-title">Contact Us!</p>
+
+        <form class="form">
+            <label for="form-name">Name:</label><br>
+            <input type="text" id="form-name"><br><br>
+            <label for="form-email">Email:</label><br>
+            <input type="text" id="form-email"><br><br>
+            <label for="form-contact-number">Contact Number:</label><br>
+            <input id="contact-number" type="text"> 
+            <input type="submit" value="Submit" id="form-submit-button"/>
+        </form>
+
+        <div class="form-message">
+            <p class="message">Message:</p><br>
+            <textarea cols="80" rows="13" placeholder="Type your message here..."></textarea> 
+        </div>
+        
+    </section>
+    <footer>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
